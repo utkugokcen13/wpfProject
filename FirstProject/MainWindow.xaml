@@ -1,0 +1,36 @@
+﻿<Window x:Class="FirstProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstProject"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <Rectangle Height="228" VerticalAlignment="Top" Margin="0,0,-0.4,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Width="280" Height="240" Margin="0,100" Fill="White" VerticalAlignment="Bottom">
+            <Rectangle.Effect>
+                <DropShadowEffect Color="#FFBBBBBB" RenderingBias="Quality" BlurRadius="15" ShadowDepth="1"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,100">
+            <TextBlock Text="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="116,24,111,0" Foreground="Gray" FontSize="18"/>
+            <TextBlock Text="Username" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,91,178,0" Foreground="Black" FontSize="14"/>
+            <TextBlock Text="Password" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,149,182,0" Foreground="Black" FontSize="14"/>
+            <TextBox Name="txtUsername" Margin="40,115,40,107" Width="200" />
+            <PasswordBox Name="txtPassword" Margin="40,173,40,49" Width="200" />
+
+        </Grid>
+        <Button Click="loginButtonClicked" VerticalAlignment="Bottom" Content="LOGIN" Margin="327,0,327,90" Background="CornflowerBlue" Foreground="White"/>
+        <Image Source="Assets/key.png" Width="30" Height="30" Margin="383,140,380.6,0" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.418,3.094"/>
+    </Grid>
+</Window>
